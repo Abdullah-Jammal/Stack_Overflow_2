@@ -30,10 +30,6 @@ interface AuthFormProps<T extends FieldValues> {
   formType: "SIGN_IN" | "SIGN_UP";
 }
 
-export const formSchema = {
-  email: z.string().email({ message: "provide email" }),
-};
-
 const AuthForm = <T extends FieldValues>({
   schema,
   defaultValues,

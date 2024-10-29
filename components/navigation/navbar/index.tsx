@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Theme from "../Theme";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   return (
@@ -24,6 +25,7 @@ const Navbar = () => {
       <p>Global Search</p>
       <div className="flex-between gap-5">
         <Theme />
+        <MobileNavbar />
       </div>
     </nav>
   );
