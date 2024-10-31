@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Theme from "../Theme";
 import MobileNavbar from "./MobileNavbar";
+import Theme from "./Theme";
 
 const Navbar = () => {
   return (
