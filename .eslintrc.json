@@ -6,7 +6,9 @@
     "plugin:tailwindcss/recommended",
     "prettier"
   ],
-  "plugins": ["import"],
+  "plugins": [
+    "import"
+  ],
   "rules": {
     "import/order": [
       "error",
@@ -15,7 +17,10 @@
           "builtin",
           "external",
           "internal",
-          ["parent", "sibling"],
+          [
+            "parent",
+            "sibling"
+          ],
           "index",
           "object"
         ],
@@ -27,12 +32,25 @@
             "position": "after"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["builtin"],
+        "pathGroupsExcludedImportTypes": [
+          "builtin"
+        ],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
         }
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ]
 }
