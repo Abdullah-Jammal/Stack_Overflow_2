@@ -28,6 +28,7 @@ const Editor = dynamic(() => import("@/components/editor"), {
 
 const QuestionForm = () => {
   const editorRef = useRef<MDXEditorMethods>(null);
+
   const form = useForm<z.infer<typeof AskQuestionSchema>>({
     resolver: zodResolver(AskQuestionSchema),
     defaultValues: {

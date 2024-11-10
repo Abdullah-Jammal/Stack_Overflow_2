@@ -53,6 +53,7 @@ interface SearchParams {
 
 const Home = async ({ searchParams }: SearchParams) => {
   const { query = "" } = await searchParams;
+  console.log(query);
   const filteredQuestions = questions.filter((question) =>
     question.title.toLowerCase().includes(query?.toLowerCase())
   );
